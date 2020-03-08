@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="96dp">
+
+        <!--City-->
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:orientation="horizontal">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:padding="4dp"
+                      android:textColor="@color/colorBlack"
+                      android:layout_height="wrap_content"
+                      android:text="@string/city"
+                      android:textStyle="bold"
+                      android:id="@+id/cityLabelTextView"/>
+
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:padding="4dp"
+                      android:textColor="@color/colorBlack"
+                      android:layout_height="wrap_content"
+                      tools:text="Date"
+                      android:id="@+id/cityTextView"/>
+
+        </LinearLayout>
+        <!--Date-->
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:orientation="horizontal">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:padding="4dp"
+                      android:textColor="@color/colorBlack"
+                      android:layout_height="wrap_content"
+                      android:text="@string/date"
+                      android:textStyle="bold"
+                      android:id="@+id/dateLabelTextView"/>
+
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:padding="4dp"
+                      android:textColor="@color/colorBlack"
+                      android:layout_height="wrap_content"
+                      tools:text="Date"
+                      android:id="@+id/dateTextView"/>
+
+        </LinearLayout>
+
+        <!--Temperature-->
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlack"
+                    android:padding="4dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temperature"
+                    android:textStyle="bold"
+                    android:id="@+id/temperatureLabelTextView"/>
+
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:textColor="@color/colorBlack"
+                      android:padding="4dp"
+                      android:layout_height="wrap_content"
+                      tools:text="23 C"
+                      android:id="@+id/temperatureTextView"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
